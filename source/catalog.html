@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Нёрдс</title>
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+
+<body class="page-body">
+
+<header class="page-header">
+  <div class="page-header__logo">
+    <a class="page-header__logo-link">
+      <img src="img/logos/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+    </a>
+  </div>
+  <nav class="page-header__navigation main-navigation">
+    <div class="main-navigation__wrapper">
+      <ul class="main-navigation__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Студия</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Клиенты</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Магазин</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Контакты</a>
+        </li>
+      </ul>
+      <div class="main-navigation__list basket-list">
+        <a class="basket-list__link" href="#">Корзина</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="page-main">
+  <h1 class="visually-hidden">Сайт дизайн-студии Нёрдс</h1>
+
+  <section class="page-main__contacts contacts">
+    <h2 class="visually-hidden">Как нас найти</h2>
+    <div class="contacts__wrapper">
+      <div class="contacts__container">
+        <h3 class="contacts__title">NЁRDS design studio</h3>
+        <div class="contacts__description">
+          <p class="contacts__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="contacts__phone">тел. +7 (812) 275-75-75</p>
+        </div>
+        <a class="contacts__button button" href="#">Напишите нам</a>
+      </div>
+    </div>
+    <div class="contacts__map-wrapper">
+      <img class="contacts__map" src="img/map.jpg" srcset="img/map@2x.jpg 2x" width="320" height="362" alt="Карта с нашим местом расположения">
+    </div>
+  </section>
+</main>
+
+<footer class="page-footer">
+  <section class="page-footer__social social">
+    <h2 class="visually-hidden">Наши социальные сети</h2>
+    <ul class="social__list">
+      <li class="social__item">
+        <a class="social__link" href="#" aria-label="Мы в Вконтакте">
+          <img class="social__image" src="img/icons/vk-icon.svg" width="26" height="15" alt="Логтип Вконтакте">
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#" aria-label="Мы в Фейсбуке">
+          <img class="social__image" src="img/icons/fb-icon.svg" width="12" height="22" alt="Логотип Фейсбук">
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#" aria-label="Мы в Инстаграме">
+          <img class="social__image" src="img/icons/insta-icon.svg" width="21" height="21" alt="Логотип Инстаграм">
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="page-footer__promo promo">
+    <h2 class="promo__title">Давайте дружить, это выгодно!</h2>
+    <p class="promo__description">Скидка 10% для друзей из социальных сетей.</p>
+  </section>
+</footer>
+
+<section class="modal-feedback feedback">
+  <h2 class="visually-hidden">Форма обратной связи</h2>
+  <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
+    <div class="feedback__form-top top">
+      <div class="top__wrapper">
+        <label class="top__label" for="name">Ваше имя:</label>
+        <input class="top__input top__input--name" type="text" name="name" id="name" placeholder="Имя Фамилия">
+      </div>
+      <div class="top__wrapper">
+        <label class="top__label" for="email">Ваш e-mail:</label>
+        <input class="top__input top__input--email" type="email" name="email" id="email" placeholder="email@example.com">
+      </div>
+    </div>
+    <div class="feedback__form-bottom bottom">
+      <label class="bottom__label" for="letter">Текст письма:</label>
+      <textarea class="bottom__textarea" name="letter" id="letter" placeholder="В свободной форме"></textarea>
+    </div>
+    <button class="feedback__form-button button" type="submit">Отправить</button>
+  </form>
+  <button class="modal-feedback__close" type="button" aria-label="Закрыть"></button>
+</section>
+
+<script src="js/script.min.js"></script>
+
+</body>
+
+</html>
